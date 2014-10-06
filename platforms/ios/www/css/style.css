@@ -1,0 +1,193 @@
+
+#home .ui-controlgroup{
+	width:60%;
+	padding-top:50px;
+	margin:0 auto;
+	max-width:200px;
+	display:block;
+}
+#addNew .ui-controlgroup{
+	width:60%;
+	padding-top:50px;
+	margin:0 auto;
+	max-width:200px;
+	display:block;
+}
+h1{
+    font-family: verdana, sans-serif;
+    font-size:100%;
+    text-align:left;
+
+}
+h2{
+    font-weight:bold;
+    font-family: verdana, sans-serif;
+    font-size:70%;
+    text-align:left;
+
+}
+
+p{
+	font-family: verdana, sans-serif;
+    font-size:70%;
+    text-align:left;
+}
+
+img{
+	position:relative;
+	width:100%;
+	display:block;
+	border:1px solid #000000;
+	margin:0 auto;
+}
+#showColor{
+	position:relative;
+	float:left;
+	width:100%;
+	height:90px;
+
+}
+#RGBInside{
+    position:relative;
+	float:right;
+	width:40%;
+	height:150px;
+	border:1px solid #000000;
+
+}
+#haveBorder{
+	border:1px solid #000000;
+
+}
+.colorRectOne{
+	position:relative;
+	float:left;
+	width:50%;
+margin-top:7px;
+	height:70px;
+    
+
+
+}
+
+#selectColor{
+width:100%;
+	height:30px;
+	border:1px solid #000000;
+	margin:0 auto;
+	background-color: #00ff00;
+}
+.selectColor{
+width:100%;
+	height:30px;
+	border:1px solid #000000;
+	margin:0 auto;
+	background-color: #00ff00;
+}
+#RGBColorValue{
+	position:relative;
+	float:left;
+	width:30%;
+	height:50px;
+	margin-left:50px;
+
+}
+
+#changingColorHere{
+	border: 1px solid #bbbbbb;
+}
+
+.colorRect{
+	position:relative;
+	float:left;
+	width:19%;
+	height:50px;
+	border:1px solid #bbbbbb;
+	margin-right: 1px;
+	margin-bottom: 20px;
+}
+.colorRectSmall{
+	position:relative;
+	float:left;
+	width:19%;
+	height:50px;
+	margin-right: 2px;
+	margin-bottom: 10px;
+    margin-top: 10px;
+
+}
+.colorRectEmotion{
+    position: relative;
+    float:left;
+    width:19%;
+    height:60px;
+    margin-right:3px;
+    margin-bottom:20px;
+
+}
+#firstpage{
+margin-top:40px;
+
+}
+
+#home {
+	background:#dddddd;
+}
+
+#items {
+	background:#dddddd;
+}
+#addNew {
+	background:#dddddd;
+}
+#favorite {
+	background:#dddddd;
+}
+#emotion {
+	background:#dddddd;
+}
+#color {
+	background:#dddddd;
+}
+.noneText{
+	display:none;
+
+}
+
+
+#chooseOne{
+		border:1px solid #bbbbbb;
+}
+#chooseTwo{
+		border:1px solid #bbbbbb;
+}
+#chooseThree{
+		border:1px solid #bbbbbb;
+}
+#chooseFour{
+		border:1px solid #bbbbbb;
+}
+#chooseFive{
+		border:1px solid #bbbbbb;
+}
+#one1{
+background-color:#bbbbbb;
+
+}
+#one2{
+background-color:#bb00bb;
+
+}
+#one3{
+background-color:#00bbbb;
+
+}
+#one4{
+background-color:#bbbb00;
+
+}
+#one5{
+background-color:#0bbbb0;
+
+}
+

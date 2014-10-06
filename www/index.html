@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+            <title>ColorGuy</title>
+            
+            <script src="js/jquery.js"></script>
+            <script src="js/jquerymobile.js"></script>
+            
+            <!-- stylesheets -->
+            <link rel="stylesheet" href="css/jquerymobile.css">
+                <link rel="stylesheet" href="css/style.css">
+                    <script type="text/javascript" src="phonegap.js"></script>
+                    <script src="js/parse-1.2.18.min.js"></script>
+                    <script src="js/index.js"></script>
+                    
+                    <style>
+                        div[data-role=content] img {
+                            width: 100%;
+                        }
+                    </style>
+                    
+                    </head>
+    <body>
+        
+        
+        
+        <section data-role="page" id="firstpage">
+            <header class = "header" data-theme="b" data-role="header" data-position="fixed">
+                <h1>Home</h1>
+                <a href="#" class="ui-btn-right ui-btn ui-btn-inline ui-btn-icon-notext  ui-corner-all ui-icon-info ">Notext</a>
+            </header>
+            <!-- header -->
+            <article data-role="content">
+                <div data-role="controlgroup" id="firstpage">
+                    <a href="#addNote" class="ui-btn  ui-btn-b ui-icon-plus ui-btn-icon-left ui-corner-all">New</a>
+                    <a href="#home" class="ui-btn  ui-btn-b ui-icon-bullets ui-btn-icon-left ui-corner-all">Notes</a>
+                    <a href="#emotion" class=" ui-btn ui-btn-b ui-icon-cloud ui-btn-icon-left ui-corner-all">Emotion</a>
+                    <a href="#color" class=" ui-btn ui-btn-b ui-icon-eye ui-btn-icon-left ui-corner-all">Color</a>
+                </div>
+            </article><!-- content -->
+            
+        </section><!-- home -->
+        
+        
+        <section data-role="page" id="home">
+            <header class = "header" data-theme="b" data-role="header" data-position="fixed">
+                <h1>All Notes</h1>
+                <a href="" id="homeHa" class="ui-btn-left ui-btn ui-btn-inline ui-btn-icon-notext  ui-corner-all  ui-icon-back"></a>
+            </header>
+            
+            <div data-role="content" id="wholeHere">
+            </div>
+            
+            
+        </section>
+        
+        
+        
+        <section data-role="page" id="addNote">
+            <header class = "header" data-theme="b" data-role="header" data-position="fixed">
+                <h1>Add New</h1>
+                <a href="" id="addNoteHa" class="ui-btn-left ui-btn ui-btn-inline ui-btn-icon-notext  ui-corner-all  ui-icon-back"></a>
+                <a href="#" class="ui-btn-right ui-btn ui-btn-inline ui-btn-icon-notext  ui-corner-all  ui-icon-info"></a>
+            </header>
+            
+            <div data-role="content">
+                <h2>Add Note</h2>
+                <textarea id="noteText"></textarea>
+                <form>
+                    <input type="button" id="takePicBtn" value="Add Pic">
+                        <input type="submit" id="saveNoteBtn" value="Save">
+                            </form>
+            </div>
+            
+        </section><!-- home -->
+        
+        
+        
+        
+        <section data-role="page" id="oneItem">
+            <header class = "header" data-theme="b" data-role="header" data-position="fixed">
+                <h1 id="oneItemH"></h1>
+                <a href="" id="oneItemHa" class="ui-btn-left ui-btn ui-btn-inline ui-btn-icon-notext  ui-corner-all  ui-icon-back"></a>
+                <a href="" class="ui-btn-right ui-btn ui-btn-inline ui-btn-icon-notext  ui-corner-all  ui-icon-info"></a>
+            </header>
+            <div data-role="content"  id = "content"></div>
+            
+            <footer data-theme="b" data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="" id="goBackToHome" class="ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-top ui-icon-home">Home</a></li>
+                        <li><a href="" class="ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-top ui-icon-edit" id = "goToEditing">Edit</a></li>
+                        </footer>
+        </section><!-- home -->
+        
+        
+        
+        
+        
+        
+        <section data-role="page" id="itemEdit">
+            <header class = "header" data-theme="b" data-role="header" data-position="fixed">
+                <h1 id="itemEditH"></h1>
+                <a href="" class="ui-btn-left ui-btn ui-btn-inline ui-btn-icon-notext  ui-corner-all  ui-icon-back" id="itemEditH1A"></a>
+            </header>
+            <article data-role="content">
+                
+                <div class="item" >
+                    <div class="Emotions">
+                        <form>
+                            <fieldset data-role="controlgroup" data-mini="true" id="checkBoxEmo">
+                                <input type="checkbox"  name="checkbox-mini-0" id="c-emotion-happy" value = "Happy" class="checkBoxEmotions"> <label for="c-emotion-happy">Happy</label>
+                                    <input type="checkbox" name="checkbox-mini-0"  id="c-emotion-sad" value = "Sad" class="checkBoxEmotions"> <label for="c-emotion-sad">Sad</label>
+                                        <input type="checkbox" name="checkbox-mini-0"  id="c-emotion-exciting" value = "Excited" class="checkBoxEmotions"> <label for="c-emotion-exciting">Excited</label>
+                                            <input type="checkbox" name="checkbox-mini-0" id="c-emotion-peaceful" value = "Peaceful" class="checkBoxEmotions"> <label for="c-emotion-peaceful">Peaceful</label>
+                                                <input type="checkbox" name="checkbox-mini-0"  id="c-emotion-inspired" value = "Inspired" class="checkBoxEmotions"> <label for="c-emotion-inspired">Inspired</label>
+                                                    <input type="checkbox" name="checkbox-mini-0" id="c-emotion-passion" value = "Passion" class="checkBoxEmotions"> <label for="c-emotion-passion">Passion</label>
+                                                        <input type="checkbox" name="checkbox-mini-0"  id="c-emotion-anger" value = "Anger" class="checkBoxEmotions"> <label for="c-emotion-anger">Anger</label>
+                                                            <input type="checkbox" name="checkbox-mini-0" id="c-emotion-frustration" value = "Frustration" class="checkBoxEmotions"> <label for="c-emotion-frustration">Frustration</label>
+                                                                </fieldset>
+                        </form>
+                    </div>
+                    
+                    
+                    <form>
+                        <input type="text" id="noteText1" size="16" placeholder="Happy">
+                            <input type="submit" id="saveTextsBtn" value="Save" data-mini="true">
+                                </form>
+                    <p id="itemEditP"></p>
+                </div>
+                
+                <div class="group method">
+                    <a href="" class="ui-btn ui-corner-all ui-mini" id="itemEditNextBtn">Next</a>
+                </div>
+                
+            </article>
+            
+        </section>
+        
+        
+        
+        
+        <section data-role="page" id="chooseColors">
+
+            <header class = "header" data-theme="b" data-role="header" data-position="fixed">
+                <h1 id="chooseColorsH1"></h1>
+                <a href="" id="chooseColorHa" class="ui-btn-left ui-btn ui-btn-inline ui-btn-icon-notext  ui-corner-all  ui-icon-back"></a>
+
+                
+            </header>
+            <body>
+                <article data-role="content" id="chooseColorArticle">
+                    <!-- Load the Paper.js library -->
+                    
+                    
+                    <!--      ////////////////////////////////////////////////////////////////////////     -->
+                    <!--started from below-->
+                    <div id="chooseColorsPicture">
+                        <!-- <script type="text/javascript" src="js/paper-full.js" id="chooseColorsPicturescript1"></script>
+                        <script type="text/paperscript" src="js/chooseColorPic.js" canvas="Canvas" id="chooseColorsPicturescript2">
+                            //chooseColorsfunction();
+                            </script>-->
+                        <!-- Define inlined PaperScript associate it with myCanvas -->
+                        <!-- <canvas id="Canvas" width=290  height=210></canvas>-->
+                        
+                        
+                        <!--<img src="" id="mona" style="display:none"></img>-->
+                        
+                        
+                        <!-- Define inlined PaperScript associate it with myCanvas -->
+                        <!--<script type="text/paperscript" src="js/chooseColorPic.js" canvas="Canvas"></script>-->
+                    </div>
+                    <!--      ////////////////////////////////////////////////////////////////////////     -->
+                    
+                    
+                    <div id="showColor" ><div id="changingColorHere" class="colorRectOne" id="haveBorder"></div>
+                        <div id="RGBColorValue">
+                            <p class="RGB" id="colorR">R:</p>
+                            <p class="RGB" id="colorG">G:</p>
+                            <p class="RGB" id="colorB">B:</p>
+                        </div>
+                    </div>
+                    
+                    <div class="color mode", id="summary" data-mini="true">
+                        <label for="s-colorMode" data-mini="true"></label>
+                        <select id="s-colorMode" data-mini="true">
+                            <!--<option value="" data-mini="true"><p>- colorMode select -</p></option>-->
+                            <option value="RGB" data-mini="true">RGB</option>
+                            <option value="CMYK" data-mini="true">CMY</option>
+                            <option value="HSL" data-mini="true">HSL</option>
+                            <option value="HSV" data-mini="true">HSV</option>
+                            <option value="Hex" data-mini="true">Hex</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <form>
+                            <input class="ui-btn ui-corner-all ui-mini" type="submit" value="Save" id="choosecolorseditSubmit">
+                                </form>
+                        
+                        <div id="results"></div>
+                        
+                        </form>
+                        
+                    </div>
+                    
+                    
+                </article>
+            </body>
+            <footer data-theme="b" data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <div id="chooseOne" class="colorRectSmall"></div>
+                    <div id="chooseTwo" class="colorRectSmall"></div>
+                    <div id="chooseThree" class="colorRectSmall"></div>
+                    <div id="chooseFour" class="colorRectSmall"></div>
+                    <div id="chooseFive" class="colorRectSmall"></div>
+                    </footer>
+        </section><!-- home -->
+        
+        
+        
+        
+        
+        
+        
+        <section data-role="page" id="emotion">
+            <header class = "header" data-theme="b" data-role="header" data-position="fixed">
+                <h1>Emotion</h1>
+                <a href="" id="emotionSearchA" class="ui-btn-left ui-btn ui-btn-inline ui-btn-icon-notext  ui-corner-all ui-icon-back"></a>
+                <a href="#" class="ui-btn-right ui-btn ui-btn-inline ui-btn-icon-notext  ui-corner-all ui-icon-info"></a>
+            </header>
+            <article data-role="content">
+                <form>
+                    <input type="text" id="AsknoteText1" size="16" placeholder="Happy">
+                        <input type="submit" id="AskTextsBtn" value="Search" data-mini="true">
+                            </form>
+            </article><!-- content -->
+            <div data-role="content"></div>
+            
+
+        </section><!-- home -->
+        
+        
+        <section data-role="page" id="color">
+            <header class = "header" data-theme="b" data-role="header" data-position="fixed">
+                <h1>Color</h1>
+                <a href="#firstpage" class="ui-btn-left ui-btn ui-btn-inline ui-btn-icon-notext  ui-corner-all ui-icon-back" id="colorAback"></a>
+                <!-- <a href="#" class="ui-btn-right ui-btn ui-btn-inline ui-btn-icon-notext  ui-corner-all ui-icon-info"></a> -->
+            </header>
+            <!--<article data-role="content">
+             <div class="color-mode-search", id="colorSearchColors" data-mini="true">
+             <label for="c-colorMode" data-mini="true"></label>
+             <select id="c-colorMode" data-mini="true">
+             <option value="" data-mini="true"><p>- colorMode select -</p></option>
+             <option value="RGB" data-mini="true">RGB</option>
+             <option value="Hex" data-mini="true">Hex</option>
+             </select>
+             </div>
+             </article>-->
+            <div data-role="content">
+                <form id="form-slider">
+                    
+                    <!--<div>
+                     <b>Hex:#</b>
+                     <input type="text" id="txt-hex-color" size="20" placeholder="ffffff">
+                     </div>-->
+                    
+                    <div id = "color_sliders">
+                        <br/><b>RGB:</b>
+                        <label for="slider-3">R:</label>
+                        
+                        <input data-mini="true" class = "slider" id="sliderR" type="range" name="slider-3"  min="0" max="255" value="0" data-show-value="true" data-popup-enabled="true">
+                            
+                            <label for="slider-3">G:</label>
+                            
+                            <input data-mini="true" class = "slider" id="sliderG" type="range" name="slider-3"  min="0" max="255" value="255" data-show-value="true" data-popup-enabled="true">
+                                
+                                <label for="slider-3">B:</label>
+                                
+                                <input data-mini="true" class = "slider" id="sliderB" type="range" name="slider-3" min="0" max="255" value="0" data-show-value="true" data-popup-enabled="true">
+                                    </div>
+                    <!--<div id="color_inputText">
+                     <br/><b>Hex:# </b>
+                     <input type="text" id="txt-hex-color-input" size="16" placeholder="ffffff">
+                     </div>-->
+                    <br/>
+                    <div id="selectColor"></div><br/>
+                    
+                    <label for="btn-color"></label>
+                    <input type="submit" value="Search" id="btn-color">
+                        
+                        
+                        </form>
+            </div>
+
+        </section>
+        
+        
+        
+        <section data-role="page" id="colorResults">
+            <header class = "header" data-theme="b" data-role="header" data-position="fixed">
+                <h1>Color Results</h1>
+                <a href="#color" id="colorResultsA" class="ui-btn-left ui-btn ui-btn-inline ui-btn-icon-notext  ui-corner-all  ui-icon-back"></a>
+            </header>
+            
+            <div data-role="content" id="colorPartHere">
+            </div>
+            
+            
+        </section>
+        
+        
+        <script src="js/script.js"></script>
+    </body>
+</html>
